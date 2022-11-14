@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Scorecard Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+<style>
+body  {
+  background-color: lavender;
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+    border: 2px groove;
+}
+</style>
+<body>
+ <div class="predict">
+	<h2 style="margin: auto; width: 35%; padding: 0.5%; border: 2px solid; text-align: center;">Credit Scorecard Prediction</h2>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+		<fieldset style="float:left; height:550px; width:630px;">
+			<legend><b>Demographic data:</b></legend>
+			<p><b>Age:</b><br>
+			<input type="text" name="age" placeholder="Age of applicant" required="required" /></p>
+						
+
+				<p><b>Personal Status :</b><br>
+				<select name="personal_status" id="personal_status" required>
+					<option value="1">Male : divorced/separated</option>
+					<option value="2">Female : non-single / Male : single</option>
+					<option value="3">Male : married/widowed </option>
+					<option value="4">Female : single</option>
+				</select></p>			
+
+			
+				<p><b>Job :</b><br>
+				<select name="job" id="job" required>
+					<option value="1">Unemployed/Unskilled(Non-resident)</option>
+					<option value="2">Unskilled(Resident)</option>
+					<option value="3">Skilled employee/Official</option>
+					<option value="4">Manager/Self-employed/Highly qualified employee</option>
+				</select></p>
+			
+			
+				<p><b>Employment Duration:</b><br>
+				<select name="emp_dur" id="emp_dur" required>
+					<option value="1">Unemployed</option>
+					<option value="2">Less than 1 yr</option>
+					<option value="3">1 to 4 yrs</option>
+					<option value="4">4 to 7 yrs</option>
+					<option value="5">More than 7 yrs</option>
+				</select></p>
+	
+				<b>Are you a foreign worker?:</b><br>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="fw_1" name="foreign_worker" value="1" required="required"/>
+				<label for="graduate_school">Yes</label>
+				</div>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="fw_2" name="foreign_worker" value="2" required="required"/>
+				<label for="university">No</label>
+				</div>
+				<br>
+			
+			
+				<p><b>How long have you been living in your current residence?:</b><br>
+				<select name="residence_duration" id="residence_duration" required>
+					<option value="1">Less than 1 yr</option>
+					<option value="2">1 to 4 yrs</option>
+					<option value="3">4 to 7 yrs</option>
+					<option value="4">More than 7 yrs</option>
+				</select></p>
+			
+
+				<b>What kind of housing do you live in?:</b><br>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="housing_1" name="housing" value="1" required="required"/>
+				<label for="graduate_school">Free</label>
+				</div>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="housing_2" name="housing" value="2" required="required"/>
+				<label for="university">Rented</label>
+				</div>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="housing_3" name="housing" value="3" required="required"/>
+				<label for="high_school">Own</label>
+				</div>
+				<br>
+			
+			
+				<p><b>What kind of properties do you own?:</b><br>
+				<select name="property" id="property" required>
+					<option value="1">No property</option>
+					<option value="2">Car or other vehicle</option>
+					<option value="3">Building/ Saving agr./ Life Insurance</option>
+					<option value="4">Real Estate</option>
+				</select></p>
+			
+			
+				<b>How many people depend on your income?:</b><br>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="pl_2" name="people_liable" value="1" required="required"/>
+				<label for="graduate_school">0 to 2 people</label>
+				</div>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="pl_1" name="people_liable" value="2" required="required"/>
+				<label for="university">3 or more people</label>
+				</div>
+				<br><br>
+			
+			
+				<b>Do you have a registered telephone number under your name?:</b><br>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="telephone_1" name="telephone" value="1" required="required"/>
+				<label for="graduate_school">Yes</label>
+				</div>
+				<div style="float:left; margin-right: 1.5em;">
+				<input type="radio" id="telephone_2" name="telephone" value="2" required="required"/>
+				<label for="university">No</label>
+				</div>
+				<br>
+		</fieldset>
+		
+		
+		
+		<fieldset style="height:550px;">
+				<legend><b>Behavioral data:</b></legend>
+				<p><b>Amount:</b><br>
+				<input type="text" name="amount" placeholder="amount in DM" required="required" /></p>
+				
+				<p><b>Duration:</b><br>
+				<input type="text" name="duration" placeholder="" required="required" /></p>
+				
+				<p><b>Purpose:</b><br>
+				<select name="purpose" id="purpose" required>
+					<option value="1">Car(New)</option>
+					<option value="2">Car(Used)</option>
+					<option value="3">Furniture/Equipment</option>
+					<option value="4">Radio/Television</option>
+					<option value="5">Domestic Appliances</option>
+					<option value="6"> Repairs</option>
+					<option value="7">Education </option>
+					<option value="8">Vacation</option>
+					<option value="9">Retraining</option>
+					<option value="10">Busness </option>
+					<option value="0">Others</option>
+				</select></p>
+			
+	
+				<p><b>Installment Rate: </b><br>
+				<select name="installment_rate" id="installment_rate" required>
+					<option value="1">Greater than 35</option>
+					<option value="2">25 to 35</option>
+					<option value="3">20 to 25</option>
+					<option value="4">Less than 20</option>
+				</select></p>
+
+
+				<p><b>Savings</b><br>
+				<select name="savings" id="savings" required>
+					<option value="1">No savings</option>
+					<option value="2">Less than 100 DM</option>
+					<option value="3">100 to 500 DM</option>
+					<option value="4">500 to 1000 DM</option>
+					<option value="5">Greater than 1000 DM</option>
+				</select></p>
+			
+
+				<p><b>Status</b><br>
+				<select name="status" id="status" required>
+					<option value="1">No checking account</option>
+					<option value="2">Less than 0 DM</option>
+					<option value="3">0 to 200 DM</option>
+					<option value="4">Greater than 200 DM</option>
+				</select></p>
+
+			
+				<p><b>Number of Credits :</b><br>
+				<select name="num_credits" id="num_credits" required>
+					<option value="1">Atleast 1</option>
+					<option value="2">2 to 3</option>
+					<option value="3">4 to 5</option>
+					<option value="4">6 or more</option>
+				</select></p>
+			
+			
+				<p><b>Credit History :</b><br>
+				<select name="credit_history" id="credit_history" required>
+					<option value="0">Delay in paying off in the past</option>
+					<option value="1">Critical account / Other credits elsewhere</option>
+					<option value="2">No credits taken / All credits paid back duly</option>
+					<option value="3">Existing credits paid back duly till now </option>
+					<option value="4">All credits at this bank paid back duly</option>
+				</select></p>
+			
+
+			
+				<p><b>Do you have any other installment plans elsewhere? :</b><br>
+				<select name="other_installments" id="other_installments" required>
+					<option value="1">Another Bank</option>
+					<option value="2">Store(s)</option>
+					<option value="3">None </option>
+				</select></p>
+			
+			
+				<p><b>Other debtors :</b><br>
+				<select name="other_debtors" id="other_debtors" required>
+					<option value="1">None</option>
+					<option value="2">Co-applicant</option>
+					<option value="3">Guarantor </option>
+				</select></p>
+		</fieldset>
+		
+		
+		<div style="text-align:center;">
+			<button type="submit" class="btn btn-primary btn-block btn-large"><b>Predict Risk</b></button>
+		</div>
+    </form>
+	<br>
+	<div class="result" align="center">
+		{% if prediction %}
+			<p style="padding: 0.5%"><b>{{ prediction }}</b></p>
+		{% endif %}	
+	</div>
+ </div>
+
+
+</body>
+</html>
