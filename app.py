@@ -2,6 +2,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 
+"""
 # Function for encoding status value
 def status_encode(status):
   if status==1:
@@ -105,6 +106,7 @@ def pss_encode(pss):
     return([1])
   else:
     return([0])
+    """
 
 app = Flask(__name__)
 
@@ -114,6 +116,7 @@ model = pickle.load(open('crc.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+  """
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
@@ -149,6 +152,7 @@ def predict():
       result = "BAD RISK"
 
     return render_template('index.html', prediction=result)
+    """
 
 if __name__ == "__main__":
     app.run(debug=True)
