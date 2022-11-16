@@ -227,8 +227,10 @@ body  {
     </form>
 	<br>
 	<div class="result" align="center">
-		{% if prediction %}
-			<p style="padding: 0.5%"><b>{{ prediction }}</b></p>
+		{% if prediction==1 %}
+			<h2><p style="padding: 0.3%"><b>GOOD RISK!</b></p></h2>
+		{% elif prediction==0 %}
+			<h2><p style="padding: 0.3%"><b>BAD RISK!</b></p></h2>
 		{% endif %}	
 	</div>
  </div>
