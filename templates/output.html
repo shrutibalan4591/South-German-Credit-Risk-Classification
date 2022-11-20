@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Risk Classification</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+<style>
+body  {
+  background-color: lavender;
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+}
+</style>
+<body>
+ <div class="output">
+	<h2 style="margin: auto; width: 35%; padding: 0.5%; border: 2px solid; text-align: center;">Credit Risk Classification</h2>
+	<br><br><br>
+     <!-- Output Displayed -->
+		<!--<fieldset style="float:left; height:550px; width:1320px;">-->
+			<div class="result" align="center">
+				{% if prediction==1 %}
+					<p> <h3>Output:</h3></p>
+					<h2>This profile is classified as <p style="padding: 0.3%"><b style="color:green">GOOD RISK!</b></p></h2>
+				{% elif prediction==0 %}
+					<p> <h3>Output:</h3></p>
+					<h2>This profile is classified as <p style="padding: 0.3%"><b style="color:red">BAD RISK!</b></p></h2>
+				{% endif %}
+			</div>
+		<!--</fieldset>-->
+ </div>
+
+
+</body>
+</html>
