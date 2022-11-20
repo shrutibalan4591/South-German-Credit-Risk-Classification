@@ -1,0 +1,546 @@
+2022-11-19 16:19:21,116 - root - INFO - FILE STARTS RUNNING!
+2022-11-19 16:19:21,420 - numexpr.utils - INFO - NumExpr defaulting to 2 threads.
+2022-11-19 16:19:21,746 - matplotlib.pyplot - DEBUG - Loaded backend module://ipykernel.pylab.backend_inline version unknown.
+2022-11-19 16:19:22,200 - root - INFO - Libraries imported..
+2022-11-19 16:19:22,215 - root - INFO - Connecting to database..
+2022-11-19 16:19:23,105 - cassandra.cluster - DEBUG - Connecting to cluster, contact points: [<SniEndPoint: 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65>, <SniEndPoint: 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7>, <SniEndPoint: 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>]; protocol version: 66
+2022-11-19 16:19:23,108 - cassandra.pool - DEBUG - Host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65 is now marked up
+2022-11-19 16:19:23,112 - cassandra.pool - DEBUG - Host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7 is now marked up
+2022-11-19 16:19:23,115 - cassandra.pool - DEBUG - Host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b is now marked up
+2022-11-19 16:19:23,117 - cassandra.cluster - DEBUG - [control connection] Opening new connection to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:23,580 - cassandra.connection - DEBUG - Sending initial options message for new connection (139962086683920) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:23,588 - cassandra.io.libevreactor - DEBUG - Starting libev event loop
+2022-11-19 16:19:24,033 - cassandra.connection - DEBUG - Defuncting connection (139962086683920) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2022-11-19 16:19:24,037 - cassandra.io.libevreactor - DEBUG - Closing connection (139962086683920) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:24,038 - cassandra.io.libevreactor - DEBUG - Closed socket to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:24,040 - cassandra.cluster - WARNING - Downgrading core protocol version from 66 to 65 for 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2022-11-19 16:19:24,040 - cassandra.io.libevreactor - DEBUG - All Connections currently closed, event loop ended
+2022-11-19 16:19:24,494 - cassandra.connection - DEBUG - Sending initial options message for new connection (139962086685456) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:24,496 - cassandra.io.libevreactor - DEBUG - Starting libev event loop
+2022-11-19 16:19:24,940 - cassandra.connection - DEBUG - Defuncting connection (139962086685456) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2022-11-19 16:19:24,943 - cassandra.io.libevreactor - DEBUG - Closing connection (139962086685456) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:24,946 - cassandra.io.libevreactor - DEBUG - Closed socket to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:24,949 - cassandra.cluster - WARNING - Downgrading core protocol version from 65 to 5 for 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2022-11-19 16:19:24,949 - cassandra.io.libevreactor - DEBUG - All Connections currently closed, event loop ended
+2022-11-19 16:19:25,400 - cassandra.connection - DEBUG - Sending initial options message for new connection (139962086667792) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:25,402 - cassandra.io.libevreactor - DEBUG - Starting libev event loop
+2022-11-19 16:19:25,843 - cassandra.connection - ERROR - Closing connection <LibevConnection(139962086667792) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2022-11-19 16:19:25,846 - cassandra.connection - DEBUG - Defuncting connection (139962086667792) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2022-11-19 16:19:25,849 - cassandra.io.libevreactor - DEBUG - Closing connection (139962086667792) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:25,850 - cassandra.io.libevreactor - DEBUG - Closed socket to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:25,854 - cassandra.cluster - WARNING - Downgrading core protocol version from 5 to 4 for 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2022-11-19 16:19:25,854 - cassandra.io.libevreactor - DEBUG - All Connections currently closed, event loop ended
+2022-11-19 16:19:26,297 - cassandra.connection - DEBUG - Sending initial options message for new connection (139961660490704) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:26,299 - cassandra.io.libevreactor - DEBUG - Starting libev event loop
+2022-11-19 16:19:26,732 - cassandra.connection - DEBUG - Received options response on new connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:26,738 - cassandra.connection - DEBUG - No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2022-11-19 16:19:26,739 - cassandra.connection - DEBUG - Sending StartupMessage on <LibevConnection(139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>
+2022-11-19 16:19:26,743 - cassandra.connection - DEBUG - Sent StartupMessage on <LibevConnection(139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>
+2022-11-19 16:19:26,965 - cassandra.connection - DEBUG - Got AuthenticateMessage on new connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b: org.apache.cassandra.auth.PasswordAuthenticator
+2022-11-19 16:19:26,971 - cassandra.connection - DEBUG - Sending SASL-based auth response on <LibevConnection(139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>
+2022-11-19 16:19:27,203 - cassandra.connection - DEBUG - Connection <LibevConnection(139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b> successfully authenticated
+2022-11-19 16:19:27,206 - cassandra.cluster - DEBUG - [control connection] Established new connection <LibevConnection(139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>, registering watchers and refreshing schema and topology
+2022-11-19 16:19:28,089 - cassandra.cluster - DEBUG - [control connection] Refreshing node list and token map using preloaded results
+2022-11-19 16:19:28,093 - cassandra.policies - INFO - Using datacenter 'asia-south1' for DCAwareRoundRobinPolicy (via host '40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2022-11-19 16:19:28,100 - cassandra.cluster - DEBUG - [control connection] Finished fetching ring info
+2022-11-19 16:19:28,110 - cassandra.cluster - DEBUG - [control connection] Rebuilding token map due to topology changes
+2022-11-19 16:19:29,012 - cassandra.cluster - DEBUG - Control connection created
+2022-11-19 16:19:29,054 - cassandra.pool - DEBUG - Initializing connection for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:19:29,061 - cassandra.pool - DEBUG - Initializing connection for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:19:29,524 - cassandra.connection - DEBUG - Sending initial options message for new connection (139961639043536) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:19:29,526 - cassandra.connection - DEBUG - Sending initial options message for new connection (139961678527760) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:19:29,965 - cassandra.connection - DEBUG - Received options response on new connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:19:29,967 - cassandra.connection - DEBUG - No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2022-11-19 16:19:29,972 - cassandra.connection - DEBUG - Sending StartupMessage on <LibevConnection(139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7>
+2022-11-19 16:19:29,978 - cassandra.connection - DEBUG - Sent StartupMessage on <LibevConnection(139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7>
+2022-11-19 16:19:29,983 - cassandra.connection - DEBUG - Received options response on new connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:19:29,993 - cassandra.connection - DEBUG - No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2022-11-19 16:19:30,008 - cassandra.connection - DEBUG - Sending StartupMessage on <LibevConnection(139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65>
+2022-11-19 16:19:30,013 - cassandra.connection - DEBUG - Sent StartupMessage on <LibevConnection(139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65>
+2022-11-19 16:19:30,238 - cassandra.connection - DEBUG - Got AuthenticateMessage on new connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7: org.apache.cassandra.auth.PasswordAuthenticator
+2022-11-19 16:19:30,244 - cassandra.connection - DEBUG - Sending SASL-based auth response on <LibevConnection(139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7>
+2022-11-19 16:19:30,247 - cassandra.connection - DEBUG - Got AuthenticateMessage on new connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65: org.apache.cassandra.auth.PasswordAuthenticator
+2022-11-19 16:19:30,251 - cassandra.connection - DEBUG - Sending SASL-based auth response on <LibevConnection(139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65>
+2022-11-19 16:19:30,493 - cassandra.connection - DEBUG - Connection <LibevConnection(139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7> successfully authenticated
+2022-11-19 16:19:30,499 - cassandra.pool - DEBUG - Finished initializing connection for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:19:30,501 - cassandra.connection - DEBUG - Connection <LibevConnection(139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65> successfully authenticated
+2022-11-19 16:19:30,502 - cassandra.cluster - DEBUG - Added pool for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7 to session
+2022-11-19 16:19:30,516 - cassandra.pool - DEBUG - Initializing connection for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:30,509 - cassandra.pool - DEBUG - Finished initializing connection for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:19:30,532 - cassandra.cluster - DEBUG - Added pool for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65 to session
+2022-11-19 16:19:30,516 - cassandra.cluster - DEBUG - Not starting MonitorReporter thread for Insights; not supported by server version 4.0.0.6816 on ControlConnection host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:30,539 - cassandra.cluster - DEBUG - Started Session with client_id c1ea6e86-772c-43e8-8879-8bdecc44efbd and session_id b1f33d91-04f3-4672-a801-edecc0210906
+2022-11-19 16:19:30,557 - root - INFO - Database Connected.
+2022-11-19 16:19:30,982 - cassandra.connection - DEBUG - Sending initial options message for new connection (139961639108688) to 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:31,054 - root - INFO - Extracting data from database..
+2022-11-19 16:19:31,428 - cassandra.connection - DEBUG - Received options response on new connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:31,430 - cassandra.connection - DEBUG - No available compression types supported on both ends. locally supported: odict_keys([]). remotely supported: ['snappy', 'lz4']
+2022-11-19 16:19:31,435 - cassandra.connection - DEBUG - Sending StartupMessage on <LibevConnection(139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>
+2022-11-19 16:19:31,442 - cassandra.connection - DEBUG - Sent StartupMessage on <LibevConnection(139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>
+2022-11-19 16:19:31,677 - cassandra.connection - DEBUG - Got AuthenticateMessage on new connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b: org.apache.cassandra.auth.PasswordAuthenticator
+2022-11-19 16:19:31,682 - cassandra.connection - DEBUG - Sending SASL-based auth response on <LibevConnection(139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b>
+2022-11-19 16:19:31,908 - cassandra.connection - DEBUG - Connection <LibevConnection(139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b> successfully authenticated
+2022-11-19 16:19:32,102 - root - INFO - Data extraction completed.
+2022-11-19 16:19:32,135 - cassandra.pool - DEBUG - Finished initializing connection for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:19:32,138 - cassandra.cluster - DEBUG - Added pool for host 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b to session
+2022-11-19 16:19:35,519 - root - INFO - Data extraction completed.
+2022-11-19 16:20:04,767 - root - INFO - Exploratory Data Analysis starts...
+2022-11-19 16:20:19,196 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+2022-11-19 16:20:19,199 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,202 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,204 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,206 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,210 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,211 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2022-11-19 16:20:19,213 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,215 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,216 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2022-11-19 16:20:19,218 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,219 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,234 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,237 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,243 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2022-11-19 16:20:19,245 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,249 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2022-11-19 16:20:19,256 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,258 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,259 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2022-11-19 16:20:19,261 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,263 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,266 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,267 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,269 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,272 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,274 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2022-11-19 16:20:19,275 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,277 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,278 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,280 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,281 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,283 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,285 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,287 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,288 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,290 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,292 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,293 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,296 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,297 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2022-11-19 16:20:19,299 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2022-11-19 16:20:19,301 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,304 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,306 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,308 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,310 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,312 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,314 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,315 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,317 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,319 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,320 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,322 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,324 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2022-11-19 16:20:19,325 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2022-11-19 16:20:19,327 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/usr/local/lib/python3.7/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2022-11-19 16:20:19,337 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2022-11-19 16:20:19,340 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,343 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,344 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,346 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,348 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,351 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2022-11-19 16:20:19,352 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,354 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,355 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2022-11-19 16:20:19,357 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,359 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,360 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,362 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,364 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2022-11-19 16:20:19,365 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,367 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2022-11-19 16:20:19,368 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,370 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,372 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2022-11-19 16:20:19,373 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,375 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,376 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,378 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,380 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,381 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,382 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2022-11-19 16:20:19,384 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,385 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,387 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,388 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,390 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,392 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,393 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,395 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,396 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,401 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,403 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,404 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:20:19,408 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,410 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2022-11-19 16:20:19,411 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2022-11-19 16:20:19,415 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,418 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,420 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,422 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,423 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,425 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,428 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,429 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,431 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:20:19,433 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:20:19,434 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:20:19,436 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:20:19,440 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2022-11-19 16:20:19,441 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2022-11-19 16:20:19,443 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/lib/python3.7/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2022-11-19 16:20:29,025 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:20:29,027 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:20:29,029 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:29,031 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:29,248 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:20:29,251 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:29,259 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:20:29,263 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:59,033 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:20:59,036 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:20:59,041 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:59,043 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:59,257 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:20:59,265 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:20:59,268 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:20:59,270 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:29,045 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:21:29,047 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:21:29,049 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:29,052 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:29,268 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:21:29,272 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:29,274 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:21:29,276 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:34,105 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=16.5.
+2022-11-19 16:21:34,111 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,115 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,118 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,123 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,127 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,129 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+2022-11-19 16:21:34,131 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,132 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,134 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2022-11-19 16:21:34,136 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,138 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,139 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,141 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,143 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+2022-11-19 16:21:34,144 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,146 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+2022-11-19 16:21:34,148 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,149 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,151 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+2022-11-19 16:21:34,153 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,155 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,157 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,159 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,160 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,162 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,164 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2022-11-19 16:21:34,165 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,167 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,176 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,178 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,180 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,182 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,183 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,185 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,187 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,188 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,190 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,192 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,193 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,195 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2022-11-19 16:21:34,197 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2022-11-19 16:21:34,198 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,200 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,202 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+2022-11-19 16:21:34,203 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,205 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,207 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,209 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,210 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,212 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+2022-11-19 16:21:34,214 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,217 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+2022-11-19 16:21:34,218 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+2022-11-19 16:21:34,220 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2022-11-19 16:21:34,222 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2022-11-19 16:21:34,224 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=16.5 to DejaVu Sans ('/usr/local/lib/python3.7/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+2022-11-19 16:21:34,511 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=18.0.
+2022-11-19 16:21:34,514 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,517 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,521 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,523 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,525 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,527 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+2022-11-19 16:21:34,528 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,530 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,532 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2022-11-19 16:21:34,533 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,535 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,537 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,539 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,541 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+2022-11-19 16:21:34,543 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,544 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+2022-11-19 16:21:34,546 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,548 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,550 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+2022-11-19 16:21:34,551 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,554 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,555 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,557 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,558 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,559 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,561 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2022-11-19 16:21:34,562 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,564 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,565 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,566 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,568 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,570 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,571 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,573 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,575 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,576 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,578 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,580 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,581 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,583 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2022-11-19 16:21:34,585 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2022-11-19 16:21:34,586 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,589 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,591 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+2022-11-19 16:21:34,592 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,594 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,597 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,598 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,600 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,603 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+2022-11-19 16:21:34,605 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,607 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+2022-11-19 16:21:34,609 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+2022-11-19 16:21:34,611 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2022-11-19 16:21:34,613 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2022-11-19 16:21:34,614 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=18.0 to DejaVu Sans ('/usr/local/lib/python3.7/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+2022-11-19 16:21:34,909 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=20.0.
+2022-11-19 16:21:34,915 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,919 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,921 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,924 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,926 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,928 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+2022-11-19 16:21:34,930 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,932 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,933 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2022-11-19 16:21:34,935 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,937 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,939 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,940 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,942 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+2022-11-19 16:21:34,944 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,946 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+2022-11-19 16:21:34,947 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,949 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,951 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+2022-11-19 16:21:34,953 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,954 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,956 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,958 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,959 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:34,962 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,964 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2022-11-19 16:21:34,966 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,968 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,970 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,972 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,973 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,975 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,977 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,979 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,981 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,982 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,984 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,986 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2022-11-19 16:21:34,987 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:34,989 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2022-11-19 16:21:34,990 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2022-11-19 16:21:34,992 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,994 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:34,995 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+2022-11-19 16:21:34,997 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:34,999 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2022-11-19 16:21:35,000 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:35,002 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2022-11-19 16:21:35,004 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2022-11-19 16:21:35,006 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+2022-11-19 16:21:35,007 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2022-11-19 16:21:35,009 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+2022-11-19 16:21:35,011 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+2022-11-19 16:21:35,012 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2022-11-19 16:21:35,014 - matplotlib.font_manager - DEBUG - findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2022-11-19 16:21:35,016 - matplotlib.font_manager - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=20.0 to DejaVu Sans ('/usr/local/lib/python3.7/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+2022-11-19 16:21:59,054 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:21:59,057 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:21:59,059 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:59,060 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:59,278 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:21:59,280 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:59,283 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:21:59,285 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:22:29,062 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:22:29,066 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:22:29,068 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:29,071 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:29,291 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:29,294 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:22:29,298 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:22:29,304 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:59,073 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:22:59,076 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:22:59,079 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:59,080 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:59,298 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:22:59,301 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:22:59,309 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:22:59,313 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:29,082 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:23:29,084 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:23:29,086 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:29,092 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:29,308 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:23:29,312 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:29,313 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:23:29,316 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:59,094 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:23:59,096 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:23:59,099 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:59,100 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:59,318 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:23:59,322 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:23:59,328 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:23:59,330 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:29,102 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:24:29,103 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:24:29,107 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:29,109 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:29,327 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:24:29,330 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:29,333 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:24:29,336 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:59,111 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:24:59,113 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:24:59,114 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:59,117 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:59,334 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:24:59,340 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:24:59,343 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:24:59,344 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:09,310 - root - INFO - Exploratory Data Analysis completed.
+2022-11-19 16:25:29,124 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:25:29,127 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:25:29,129 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:29,131 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:29,348 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:25:29,352 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:29,356 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:25:29,358 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:30,259 - root - INFO - Dropping less significant variables..
+2022-11-19 16:25:51,514 - root - INFO - Inserting new data to database..
+2022-11-19 16:25:59,133 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:25:59,135 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:25:59,136 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:59,138 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:59,358 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:59,361 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:25:59,363 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:25:59,512 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:25:59,685 - cassandra.connection - DEBUG - Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'DROPPED', 'keyspace': 'german_credit', 'table': 'gc2'}, stream_id=-1, trace_id=None)>
+2022-11-19 16:26:00,892 - cassandra.cluster - DEBUG - [control connection] Waiting for schema agreement
+2022-11-19 16:26:01,333 - cassandra.cluster - DEBUG - [control connection] Schemas match
+2022-11-19 16:26:09,018 - cassandra.cluster - DEBUG - Refreshing schema in response to schema change. {'target_type': 'TABLE', 'change_type': 'DROPPED', 'keyspace': 'german_credit', 'table': 'gc2'}
+2022-11-19 16:26:09,020 - cassandra.cluster - DEBUG - [control connection] Waiting for schema agreement
+2022-11-19 16:26:09,466 - cassandra.cluster - DEBUG - [control connection] Schemas match
+2022-11-19 16:26:29,140 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:26:29,143 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:26:29,371 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:26:29,373 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:26:56,323 - cassandra.connection - DEBUG - Message pushed from server: <EventMessage(event_type='SCHEMA_CHANGE', event_args={'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'german_credit', 'table': 'gcr2'}, stream_id=-1, trace_id=None)>
+2022-11-19 16:26:56,829 - cassandra.cluster - DEBUG - Refreshing schema in response to schema change. {'target_type': 'TABLE', 'change_type': 'CREATED', 'keyspace': 'german_credit', 'table': 'gcr2'}
+2022-11-19 16:26:56,831 - cassandra.cluster - DEBUG - [control connection] Waiting for schema agreement
+2022-11-19 16:26:57,277 - cassandra.cluster - DEBUG - [control connection] Schemas match
+2022-11-19 16:26:57,278 - cassandra.cluster - DEBUG - [control connection] Waiting for schema agreement
+2022-11-19 16:26:57,718 - cassandra.cluster - DEBUG - [control connection] Schemas match
+2022-11-19 16:27:29,149 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:27:29,153 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:27:29,154 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:29,157 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:29,378 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:29,381 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:27:29,383 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:29,384 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:27:59,160 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:27:59,163 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:27:59,165 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:59,171 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:59,391 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:27:59,393 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:27:59,395 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:27:59,396 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:28:29,174 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:28:29,395 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:28:59,177 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:28:59,399 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:29:29,181 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:29:29,402 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:29:59,183 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:29:59,405 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:30:29,187 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:30:29,408 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:30:59,191 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:30:59,412 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:31:29,195 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:31:29,415 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:31:59,197 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:31:59,418 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:32:29,200 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:32:29,421 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:32:59,203 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:32:59,425 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:33:29,207 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:33:29,428 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:33:59,210 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:33:59,431 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:34:29,213 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:34:29,435 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:34:59,217 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:34:59,438 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:35:29,220 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:35:29,441 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:35:59,223 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:35:59,444 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:24,721 - root - INFO - Insertion completed..
+2022-11-19 16:36:29,226 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:29,453 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:59,229 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961678527760) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:36:59,232 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639043536) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
+2022-11-19 16:36:59,235 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961639108688) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:59,237 - cassandra.connection - DEBUG - Sending options message heartbeat on idle connection (139961660490704) 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:59,457 - cassandra.connection - DEBUG - Received options response on connection (139961660490704) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:59,459 - cassandra.connection - DEBUG - Received options response on connection (139961639108688) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:44e57ad8-5416-4b95-85e3-f9e4c0f2a66b
+2022-11-19 16:36:59,460 - cassandra.connection - DEBUG - Received options response on connection (139961678527760) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:358ca568-08f7-42a4-8574-b72c6a0af7b7
+2022-11-19 16:36:59,463 - cassandra.connection - DEBUG - Received options response on connection (139961639043536) from 40bf567c-d6f1-41f4-acdc-2d55f7a65760-asia-south1.db.astra.datastax.com:29042:7d78e9c1-0951-47e5-ac2c-283fe5fc2d65
